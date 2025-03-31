@@ -127,7 +127,7 @@ export default function Home() {
         {/* Key Achievements */}
         <div className="bg-black text-white p-6 rounded-lg shadow-lg mt-8 mb-8 max-w-4xl  items-start">
           <h3 className="text-xl font-bold">Key Achievements</h3>
-          <ul className="mt-4 space-y-3 text-lg ml-6">
+          <ul className="text-start mt-4 space-y-3 text-lg ml-6">
             <li className="flex items-center">
               ✅ Published over 50 research papers in top-tier journals
             </li>
