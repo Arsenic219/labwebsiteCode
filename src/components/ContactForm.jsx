@@ -136,7 +136,7 @@
 export default function ContactInfo() {
   return (
     <section id="contact" className="p-2 text-white">
-      <h2 className="text-3xl font-bold mt-6 mb-6 text-center border-b-2 pb-2">
+      <h2 className="font-sans text-3xl font-bold mt-6 mb-6 text-center border-b-2 pb-2">
         Contact Us
       </h2>
       <div className="max-w-4xl mx-auto  bg-gray-800 rounded-lg shadow-lg">

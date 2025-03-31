@@ -41,7 +41,7 @@ export default function Navbar() {
             className="h-10 cursor-pointer ml-4 lg:ml-20"
           />
         </Link>
-        <h1 className="text-xl font-bold hidden lg:block">Research Lab</h1>
+        <h1 className="font-mono text-xl font-bold hidden lg:block">ChemInorganic</h1>
       </div>
 
       {/* Menu Items */}

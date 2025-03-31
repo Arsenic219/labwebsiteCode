@@ -5,10 +5,10 @@ import { Link } from "react-router-dom"; // Import Link from React Router
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-400 p-8 mt-12">
+    <footer className="font-sans bg-gray-800 text-gray-400 p-8 mt-12">
       <div className="mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
         <div className="max-w-52 mb-6 md:mb-0">
-          <h2 className="text-white text-lg font-bold">Professor's Lab</h2>
+          <h2 className="text-white text-lg font-bold">ChemInorganic Lab</h2>
           <p className="text-sm">
             Advancing research and innovation in chemistry and biotechnology through cutting-edge technology and collaborative research.
           </p>
@@ -59,7 +59,7 @@ export default function Footer() {
 
       {/* Footer Copyright */}
       <div className="text-center text-sm mt-6 border-t border-gray-700 pt-4">
-        © 2025 Professor's Research Lab. All rights reserved.
+        © 2025 ChemInorganic Lab. All rights reserved. (Developed by Akash)
       </div>
     </footer>
   );

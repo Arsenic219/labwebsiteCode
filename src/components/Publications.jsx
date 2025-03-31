@@ -36,7 +36,7 @@ export default function Publications() {
 
   return (
     <section id="publications" className="p-6">
-      <h2 className="text-3xl font-bold text-center mb-6 border-b-2 pb-2">
+      <h2 className="font-sans text-3xl font-bold text-center mb-6 border-b-2 pb-2">
         Publications
       </h2>
 

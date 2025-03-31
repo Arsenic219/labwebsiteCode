@@ -2,11 +2,11 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="relative bg-black text-white min-h-screen flex flex-col justify-center items-center text-center px-2"
+      className="font-sans relative bg-black text-white min-h-screen flex flex-col justify-center items-center text-center px-2"
     >
       <div className="w-full flex flex-col p-4 rounded-lg shadow-lg border border-gray-700 mt-8 mb-8 text-center shadow-blue-500/40 items-center bg-gray-800">
         <div className="w-full text-center mb-6">
-          <h1 className="my-2 p-1 text-start text-3xl font-bold">
+          <h1 className="my-2 p-1 text-start  text-3xl font-bold">
             Highly motivated scholars can join our group for Ph.D and you can contact me (Akash) for more details
           </h1>
         </div>

@@ -28,7 +28,7 @@ export default function Students() {
 
   return (
     <section id="students" className="p-6 text-center bg-slate-200">
-      <h2 className="text-3xl font-bold mb-6 border-b-2 pb-2 text-black">Research Team</h2>
+      <h2 className="font-sans text-3xl font-bold mb-6 border-b-2 pb-2 text-black">Research Team</h2>
       <div className="flex justify-center space-x-3 mb-6">
         <button onClick={() => filterStudents("All")} className={`px-4 py-2 rounded-lg border-black hover:bg-blue-600 ${filter === "All" ? "bg-black text-white" : "bg-gray-200 text-black"}`}>All</button>
         <button onClick={() => filterStudents("PhD")} className={`px-4 py-2 rounded-lg hover:bg-blue-600 ${filter.includes("PhD") ? "bg-black text-white" : "bg-gray-200 text-black"}`}>PhD Students</button>

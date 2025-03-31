@@ -24,7 +24,7 @@ export default function Research() {
 
   return (
     <section id="research" className="p-6">
-      <h2 className="text-4xl font-bold text-center mb-4">Research Areas</h2>
+      <h2 className="font-sans text-4xl font-bold text-center mb-4">Research Areas</h2>
       {loading ? (
         <p className="text-center text-gray-400">Loading research projects...</p>
       ) : (

@@ -24,7 +24,7 @@ export default function Laboratory() {
 
   return (
     <section id="laboratory" className="p-6">
-      <h2 className="text-3xl font-bold text-center mb-6 border-b-2 pb-2">Laboratory Facilities</h2>
+      <h2 className="font-sans text-3xl font-bold text-center mb-6 border-b-2 pb-2">Laboratory Facilities</h2>
       {loading ? (
         <p className="text-center text-gray-400">Loading laboratory data...</p>
       ) : (
