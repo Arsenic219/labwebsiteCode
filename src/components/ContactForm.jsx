@@ -135,11 +135,11 @@
 
 export default function ContactInfo() {
   return (
-    <section id="contact" className="p-6 text-white">
-      <h2 className="text-3xl font-bold mb-6 text-center border-b-2 pb-2">
+    <section id="contact" className="p-2 text-white">
+      <h2 className="text-3xl font-bold mt-6 mb-6 text-center border-b-2 pb-2">
         Contact Us
       </h2>
-      <div className="max-w-4xl mx-auto  bg-gray-800 p-6 rounded-lg shadow-lg">
+      <div className="max-w-4xl mx-auto  bg-gray-800 rounded-lg shadow-lg">
         {/* Left Section - Contact Details */}
         <div className="bg-gray-900 p-6 rounded-lg">
           <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
