@@ -31,7 +31,7 @@ export default function Home() {
             <a href="mailto:abcd.chy@iitbhu.ac.in" 
               className="text-blue-400 hover:underline text-md">abcd.chy@iitbhu.ac.in</a>
           </p>
-          <a href="/about" className="mt-4 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 text-lg">Learn More</a>
+          {/* <a href="/about" className="mt-4 inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 text-lg">Learn More</a> */}
         </div>
       </div>
     </div>
