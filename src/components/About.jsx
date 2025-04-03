@@ -7,7 +7,7 @@ export default function About() {
 
 
 
-    <div className="bg-white text-black font-sans max-w-6xl mx-auto p-6 space-y-6">
+    <div className="bg-white text-black font-sans mx-auto p-6 space-y-6">
       <h1 className="text-4xl font-bold text-center">About Our Research Lab</h1>
        
 
