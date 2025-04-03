@@ -4,13 +4,13 @@ export default function Home() {
       id="home"
       className="font-sans relative bg-black text-white min-h-screen flex flex-col justify-center items-center text-center px-2"
     >
-      <div className="w-full flex flex-col p-4 rounded-lg shadow-lg border border-gray-700 mt-8 mb-8 text-center shadow-blue-500/40 items-center bg-gray-800">
+      <div className="w-full flex flex-col p-4 rounded-sm shadow-lg border border-gray-700 mt-8 mb-8 text-center shadow-blue-500/40 items-center bg-white text-black">
         <div className="w-full text-center mb-6">
           <h1 className="my-2 p-1 text-start  text-3xl font-bold">
-            Highly motivated scholars can join our group for Ph.D and you can contact me (Akash) for more details
+            Highly motivated scholars can join our group for Ph.D for Advancing Inorganic Chemistry for a Sustainable and Greener Future.
           </h1>
         </div>
-        <div className="flex flex-col md:flex-row w-full items-center">
+        <div className="flex flex-col md:flex-row w-full items-center bg-white text-black">
           <div className="p-4 flex justify-center w-full md:w-auto">
             <img
               className="max-w-xs md:max-w-md rounded-lg shadow-2xl border border-x-gray-700 transition-transform duration-300 ease-in-out transform hover:-translate-y-2"
@@ -19,8 +19,8 @@ export default function Home() {
             />
           </div>
 
-          <div className="text-start relative w-full md:w-auto h-full bg-cover bg-center p-4 text-white">
-            <h2 className="text-3xl font-bold">Dr. SaravanKumar Elangovan</h2>
+          <div className="text-start relative w-full md:w-auto h-full bg-cover bg-center p-4 bg-white text-black">
+            <h2 className="text-3xl font-bold">Dr. SaravanaKumar Elangovan</h2>
             <p className="mt-2 font-semibold text-lg">Assistant Professor</p>
             <p className="text-md">Department of Chemistry</p>
             <p className="text-md">Indian Institute of Technology (BHU), Varanasi</p>
@@ -28,6 +28,8 @@ export default function Home() {
             <p className="text-md">Technische Universität Berlin, University of Groningen</p>
             <p className="text-lg font-semibold">Research Associate</p>
             <p className="text-md">Syngene International Limited</p>
+            <p className="text-lg font-semibold">Area of Interest:</p>
+            <p className="text-md">Organometallic Chemistry, Homogeneous Catalysis, Biomass Conversions, Green Chemistry</p>
             <p className="mt-2 font-semibold text-lg">Phone No(s):</p>
             <p className="text-md">+91-12345678</p>
             <p className="mt-2 font-semibold text-lg">Email:</p>
@@ -39,7 +41,7 @@ export default function Home() {
             {/* Learn More Button */}
             <a
               href="/about"
-              className="mt-4 inline-block px-4 py-2 bg-white text-black rounded-lg hover:bg-blue-700 text-lg"
+              className="mt-3 inline-block px-4 py-2 bg-white text-black border-2 border-black hover:bg-gray-500 text-lg"
             >
               Learn More
             </a>
