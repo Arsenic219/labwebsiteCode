@@ -17,7 +17,7 @@ export default function Gallery() {
   return (
     <section id="gallery" className="p-4 text-center">
     <h2 className="text-2xl font-bold mb-4 border-b pb-1">Gallery</h2>
-    <div className="columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4">
+    <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
       {images.slice(0, visibleCount).map((src, index) => (
         <img 
           key={index} 

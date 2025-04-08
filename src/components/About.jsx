@@ -8,49 +8,48 @@ export default function About() {
 
 
     <div className="bg-white text-black font-sans mx-auto p-6 space-y-6">
-      <h1 className="text-4xl font-bold text-center">About Our Research Lab</h1>
+      <h1 className="text-4xl font-bold text-center border-b-2 pb-2 text-black">About Our Research Lab</h1>
        
 
       {/* sir info */}
-      <div className="flex flex-col md:flex-row w-full items-center">
-          <div className="p-4 flex justify-center w-full md:w-auto">
+      <div className="max-w-7xl mx-auto py-12 text-black">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="space-y-6">
+            {/* <h1 className="text-4xl font-bold">
+              Highly motivated scholars can join our group for Ph.D for Advancing Inorganic Chemistry for a Sustainable and Greener Future.
+            </h1> */}
+            <div className="text-start">
+              <h2 className="text-2xl font-semibold">Dr. SaravanaKumar Elangovan</h2>
+              <p className="text-lg">Assistant Professor, Department of Chemistry</p>
+              <p>IIT (BHU) Varanasi</p>
+              <p className="font-semibold">Postdoctoral Researcher:</p>
+              <p>Technische Universität Berlin, University of Groningen</p>
+              <p className="font-semibold">Research Associate:</p>
+              <p>Syngene International Limited</p>
+              <p className="font-semibold">Area of Interest:</p>
+              <p>Organometallic Chemistry, Homogeneous Catalysis, Biomass Conversions, Green Chemistry</p>
+              <p className="font-semibold mt-2">Phone: +91-12345678</p>
+              <p className="font-semibold">Email: <a href="mailto:abcd.chy@iitbhu.ac.in" className="text-blue-600 underline">abcd.chy@iitbhu.ac.in</a></p>
+              <a
+                href="/about"
+                className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div>
             <img
-              className="max-w-xs md:max-w-md rounded-lg shadow-2xl border border-x-gray-700 transition-transform duration-300 ease-in-out transform hover:-translate-y-2"
+              className="w-full rounded-lg shadow-lg"
               src="https://m.economictimes.com/thumb/msid-108212368,width-1200,height-900,resizemode-4,imgsize-69468/ms-dhoni.jpg"
               alt="Professor"
             />
           </div>
-
-          <div className="text-start relative w-full md:w-auto h-full bg-cover bg-center p-4 text-black">
-            <h2 className="text-3xl font-bold">Dr. SaravanaKumar Elangovan</h2>
-            <p className="mt-2 font-semibold text-lg">Assistant Professor</p>
-            <p className="text-md">Department of Chemistry</p>
-            <p className="text-md">Indian Institute of Technology (BHU), Varanasi</p>
-            <p className="text-lg font-semibold">Postdoctoral Researcher</p>
-            <p className="text-md">Technische Universität Berlin, University of Groningen</p>
-            <p className="text-lg font-semibold">Research Associate</p>
-            <p className="text-md">Syngene International Limited</p>
-            <p className="text-lg font-semibold">Area of Interest:</p>
-            <p className="text-md">Organometallic Chemistry, Homogeneous Catalysis, Biomass Conversions, Green Chemistry</p>
-            <p className="mt-2 font-semibold text-lg">Phone No(s):</p>
-            <p className="text-md">+91-12345678</p>
-            <p className="mt-2 font-semibold text-lg">Email:</p>
-            <p>
-              <a href="mailto:abcd.chy@iitbhu.ac.in" className="text-blue-400 hover:underline text-md">
-                abcd.chy@iitbhu.ac.in
-              </a>
-            </p>
-            {/* Learn More Button */}
-            <a
-              href="/about"
-              className="mt-3 inline-block px-4 py-2 bg-white text-black border-2 border-black hover:bg-gray-500 text-lg"
-            >
-              Learn More
-            </a>
-          </div>
         </div>
+      </div>
 
-      {/* Research Lab Overview */}
+      <div className="mx-12">
+         {/* Research Lab Overview */}
       <section>
         <h2 className="text-2xl font-semibold">Research Lab</h2>
         <p>
@@ -250,6 +249,9 @@ export default function About() {
   </table>
 </section>
 
+      </div>
+
+      
 
     </div>
   );

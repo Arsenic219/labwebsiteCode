@@ -3,11 +3,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect, useRef } from "react";
 
+
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const buttonRef = useRef(null);
   const location = useLocation(); // Get current route
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [pathname]);
 
   // Function to handle click outside of the menu
   useEffect(() => {
@@ -32,16 +40,16 @@ export default function Navbar() {
   }, [menuOpen]);
 
   return (
-    <nav className="bg-gray-800 text-white py-4 px-6 flex justify-between items-center fixed top-0 w-full z-50 shadow-md">
+    <nav className="bg-gray-950 text-white py-4 px-6 flex justify-between items-center fixed top-0 w-full z-50 shadow-md">
       <div className="flex items-center space-x-4">
         <Link to="/">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzBsAGpvfrHmckxmY00R-Q7h48YDq9gZb5CzGRjXtxyNrPNFin6ZTfT5ox6e49YX_rezQ&usqp=CAU"
+            src="https://raw.githubusercontent.com/akashkumar62/labwebsite/main/gallery/logo.peg.png"
             alt="Logo"
             className="h-10 cursor-pointer ml-4 lg:ml-20"
           />
         </Link>
-        <h1 className="font-mono text-xl font-bold hidden lg:block">ChemInorganic</h1>
+        <h1 className="font-mono text-xl font-bold hidden lg:block">OMSC Lab</h1>
       </div>
 
       {/* Menu Items */}
@@ -54,9 +62,11 @@ export default function Navbar() {
           { name: "About", path: "/about" },
           { name: "Research", path: "/research" },
           { name: "Publications", path: "/publications" },
-          { name: "Laboratory", path: "/laboratory" },
+          
+          
+          { name: "Teams", path: "/students" },
           { name: "Gallery", path: "/gallery" },
-          { name: "Students", path: "/students" },
+          { name: "Laboratory", path: "/laboratory" },
           { name: "Contact", path: "/contact" },
         ].map((item) => (
           <li key={item.path}>

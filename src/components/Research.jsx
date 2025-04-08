@@ -25,6 +25,71 @@ export default function Research() {
   return (
     <section id="research" className="p-6">
       <h2 className="font-sans text-4xl font-bold text-center mb-4">Research Areas</h2>
+
+
+     {/* div1 */}
+     <div className="bg-white py-12 px-4 text-black">
+  <h2 className="text-3xl md:text-4xl font-bold mb-4">Designing of earth-abundant transition metal complexes</h2>
+  <p className="text-lg md:text-xl mb-8 text-gray-600">
+  Catalysis is integral to contemporary chemical industries, underscoring the significance of
+catalyst development for the production of diverse value-added products. From both economic
+and sustainability perspectives, the design of catalysts utilizing inexpensive and abundant
+metals is particularly noteworthy. Consequently, our laboratory is dedicated to the
+advancement of innovative catalysts employing earth-abundant transition metals for a range of
+catalytic organic transformations.
+  </p>
+
+  <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
+    <img
+      src="https://www.energy.gov/sites/default/files/2024-07/doe-explains-catalysts.png"
+      alt="Catalyst"
+      className="w-full md:w-1/3 h-64 object-cover rounded-lg shadow-md"
+    />
+    <img
+      src="https://cdn-images-1.medium.com/max/860/1*Xhmgia44I9FV-J1NeBgGrA.jpeg"
+      alt="Green Chemistry"
+      className="w-full md:w-1/3 h-64 object-cover rounded-lg shadow-md"
+    />
+    <img
+      src="https://scitechdaily.com/images/Green-Chemistry-Energy-Catalyst-Art.jpg"
+      alt="Simulation"
+      className="w-full md:w-1/3 h-64 object-cover rounded-lg shadow-md"
+    />
+  </div>
+     </div>
+
+      {/* div2 */}
+      <div className="bg-white py-12 px-4 text-black">
+  <h2 className="text-3xl md:text-4xl font-bold mb-4">Valorization of biomass into high-value chemicals</h2>
+  <p className="text-lg md:text-xl mb-8 text-gray-600">
+  In pursuit of a comfortable and sophisticated lifestyle, we often exploit the Earth&#39;s resources,
+resulting in global warming, climate change, etc. The rapid depletion of fossil fuels necessitates
+the exploration of alternative resources to ensure a safer living environment. Biomass, being an
+abundant and carbon-neutral resource with functionalized moieties, presents a viable solution.
+Therefore, our research group is dedicated to developing sustainable and catalytic
+methodologies for the valorization of biomass into high-value chemicals.
+  </p>
+
+  <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
+    <img
+      src="https://www.energy.gov/sites/default/files/2024-07/doe-explains-catalysts.png"
+      alt="Catalyst"
+      className="w-full md:w-1/3 h-64 object-cover rounded-lg shadow-md"
+    />
+    <img
+      src="https://cdn-images-1.medium.com/max/860/1*Xhmgia44I9FV-J1NeBgGrA.jpeg"
+      alt="Green Chemistry"
+      className="w-full md:w-1/3 h-64 object-cover rounded-lg shadow-md"
+    />
+    <img
+      src="https://scitechdaily.com/images/Green-Chemistry-Energy-Catalyst-Art.jpg"
+      alt="Simulation"
+      className="w-full md:w-1/3 h-64 object-cover rounded-lg shadow-md"
+    />
+  </div>
+</div>
+
+
       {loading ? (
         <p className="text-center text-gray-400">Loading research projects...</p>
       ) : (

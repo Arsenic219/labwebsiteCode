@@ -1,106 +1,234 @@
+
+import { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
 export default function Home() {
+  const [heroSliderImages, setHeroSliderImages] = useState([]);
+  const [researchSliderImages, setResearchSliderImages] = useState([]);
+  const [newsItems, setNewsItems] = useState([]);
+  const [heroIndex, setHeroIndex] = useState(0);
+  const [researchIndex, setResearchIndex] = useState(0);
+
+  useEffect(() => {
+    fetch("https://raw.githubusercontent.com/akashkumar62/labwebsite/main/heroSlider.json")
+      .then((res) => res.json())
+      .then((data) => setHeroSliderImages(data))
+      .catch((err) => console.error("Error fetching hero slider:", err));
+  
+    fetch("https://raw.githubusercontent.com/akashkumar62/labwebsite/main/researchSlider.json")
+      .then((res) => res.json())
+      .then((data) => setResearchSliderImages(data))
+      .catch((err) => console.error("Error fetching research slider:", err));
+  
+    fetch("https://raw.githubusercontent.com/akashkumar62/labwebsite/main/news.json")
+      .then((res) => res.json())
+      .then((data) => setNewsItems(data))
+      .catch((err) => console.error("Error fetching news:", err));
+
+  }
+  , []);
+
+  const nextHeroSlide = () => {
+    setHeroIndex((prevIndex) => (prevIndex + 1) % heroSliderImages.length);
+  };
+
+  const prevHeroSlide = () => {
+    setHeroIndex((prevIndex) => (prevIndex - 1 + heroSliderImages.length) % heroSliderImages.length);
+  };
+
+  const nextResearchSlide = () => {
+    setResearchIndex((prevIndex) => (prevIndex + 1) % researchSliderImages.length);
+  };
+
+  const prevResearchSlide = () => {
+    setResearchIndex((prevIndex) => (prevIndex - 1 + researchSliderImages.length) % researchSliderImages.length);
+  };
+
+  
+
+  useEffect(() => {
+    const heroInterval = setInterval(() => {
+      setHeroIndex((prev) => (prev + 1) % heroSliderImages.length);
+    }, 5000);
+
+    const researchInterval = setInterval(() => {
+      setResearchIndex((prev) => (prev + 1) % researchSliderImages.length);
+    }, 5000);
+
+    return () => {
+      clearInterval(heroInterval);
+      clearInterval(researchInterval);
+    };
+  }, [heroSliderImages.length, researchSliderImages.length]);
+
   return (
-    <section
-      id="home"
-      className="font-sans relative bg-black text-white min-h-screen flex flex-col justify-center items-center text-center px-2"
-    >
-      <div className="w-full flex flex-col p-4 rounded-sm shadow-lg border border-gray-700 mt-8 mb-8 text-center shadow-blue-500/40 items-center bg-white text-black">
-        <div className="w-full text-center mb-6">
-          <h1 className="my-2 p-1 text-start  text-3xl font-bold">
-            Highly motivated scholars can join our group for Ph.D for Advancing Inorganic Chemistry for a Sustainable and Greener Future.
-          </h1>
-        </div>
-        <div className="flex flex-col md:flex-row w-full items-center bg-white text-black">
-          <div className="p-4 flex justify-center w-full md:w-auto">
-            <img
-              className="max-w-xs md:max-w-md rounded-lg shadow-2xl border border-x-gray-700 transition-transform duration-300 ease-in-out transform hover:-translate-y-2"
-              src="https://m.economictimes.com/thumb/msid-108212368,width-1200,height-900,resizemode-4,imgsize-69468/ms-dhoni.jpg"
-              alt="Professor"
-            />
-          </div>
-
-          <div className="text-start relative w-full md:w-auto h-full bg-cover bg-center p-4 bg-white text-black">
-            <h2 className="text-3xl font-bold">Dr. SaravanaKumar Elangovan</h2>
-            <p className="mt-2 font-semibold text-lg">Assistant Professor</p>
-            <p className="text-md">Department of Chemistry</p>
-            <p className="text-md">Indian Institute of Technology (BHU), Varanasi</p>
-            <p className="text-lg font-semibold">Postdoctoral Researcher</p>
-            <p className="text-md">Technische Universität Berlin, University of Groningen</p>
-            <p className="text-lg font-semibold">Research Associate</p>
-            <p className="text-md">Syngene International Limited</p>
-            <p className="text-lg font-semibold">Area of Interest:</p>
-            <p className="text-md">Organometallic Chemistry, Homogeneous Catalysis, Biomass Conversions, Green Chemistry</p>
-            <p className="mt-2 font-semibold text-lg">Phone No(s):</p>
-            <p className="text-md">+91-12345678</p>
-            <p className="mt-2 font-semibold text-lg">Email:</p>
-            <p>
-              <a href="mailto:abcd.chy@iitbhu.ac.in" className="text-blue-400 hover:underline text-md">
-                abcd.chy@iitbhu.ac.in
-              </a>
-            </p>
-            {/* Learn More Button */}
-            <a
-              href="/about"
-              className="mt-3 inline-block px-4 py-2 bg-white text-black border-2 border-black hover:bg-gray-500 text-lg"
-            >
-              Learn More
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-20 max-w-6xl text-center">
-  <h2 className="text-3xl font-bold text-gray-100">Academia</h2>
-  <div className="flex flex-col md:flex-row items-center mt-6 space-y-6 md:space-y-0 md:space-x-6">
-    {[
-      {
-        title: "Academic Background",
-        description:
-          "Professor of [Field] with over 15 years of research experience. Specialized in advanced research methodologies and innovative laboratory techniques.",
-      },
-      {
-        title: "Research Focus",
-        description:
-          "Currently leading groundbreaking research in [specific area], with an emphasis on sustainable solutions and technological advancement.",
-      },
-      {
-        title: "Teaching Philosophy",
-        description:
-          "Committed to nurturing the next generation of researchers through hands-on experience and innovative teaching methods.",
-      },
-    ].map((item, index) => (
-      <div
-        key={index}
-        className="bg-gray-100 text-black p-6 rounded-lg shadow-md w-full md:w-1/3 
-                   hover:shadow-xl hover:-translate-y-2 transition-transform transition-shadow 
-                   duration-500 ease-out"
+    
+    <section id="home" className="font-sans bg-black text-white min-h-screen">
+       
+       {/* Hero Section Heading */}
+       <div
+        className="w-full text-start py-8 px-2 md:px-14 bg-cover bg-center relative z-10"
+        style={{ backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGUHgPpE8IVJytFxgCi8mXngZ3mxXfs81bw&s')" }}
       >
-        <h3 className="text-xl font-semibold">{item.title}</h3>
-        <p className="text-gray-700 mt-2">{item.description}</p>
+       <h1 className=" mx-1 md:ml-10 md:mr-8 text-2xl md:text-3xl font-bold mb-2">
+        The Organometallics and Sustainable Catalysis Lab
+        </h1>
+       <p className="mx-1 md:ml-10 md:mr-8 text-xl md:text-1xl">
+          We focus on the <em>development</em> of novel ligands and <strong className="text-lime-400">base metal complexes</strong>, and
+           sustainable synthetic methods that enable the valorization of biomass.
+        </p>
+    </div>
+
+
+      {/* Use heroSliderImages[heroIndex] and researchSliderImages[researchIndex] as before */}
+            {/* Hero Image Slider */}
+            {heroSliderImages.length === 0 ? (
+  <div className="w-full h-[400px] flex justify-center items-center text-white text-xl">
+    Loading hero content...
+  </div>
+) : (
+  <div className="relative w-full h-[400px] overflow-hidden">
+    <img
+      src={heroSliderImages[heroIndex].src}
+      alt="slider"
+      className="w-full h-full object-cover"
+    />
+    <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-end px-12 text-right">
+      <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        {heroSliderImages[heroIndex].heading}
+      </h2>
+      <p className="text-xl md:text-2xl mb-6">
+        {heroSliderImages[heroIndex].subheading}
+      </p>
+      {/* <a
+        href={heroSliderImages[heroIndex].buttonLink}
+        className="inline-flex items-center bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-200"
+      >
+        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.69 4.972L12 20l-6.85-4.45a12.083 12.083 0 01.69-4.972L12 14z" />
+        </svg>
+        {heroSliderImages[heroIndex].buttonText}
+      </a> */}
+    </div>
+    <button
+      onClick={prevHeroSlide}
+      className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 p-3 rounded-full hover:bg-opacity-80"
+    >
+      <ChevronLeft className="text-white" />
+    </button>
+    <button
+      onClick={nextHeroSlide}
+      className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 p-3 rounded-full hover:bg-opacity-80"
+    >
+      <ChevronRight className="text-white" />
+    </button>
+  </div>
+)}
+
+
+
+             {/* Research and Values Section */}
+      <div className="bg-white py-20 border-t border-gray-300 text-black">
+        <div className="max-w-6xl mx-auto px-4 md:flex md:space-x-12">
+          <div className="md:w-1/2 mb-10 md:mb-0">
+            <h2 className="text-5xl font-semibold text-gray-900 mb-3">Research and values</h2>
+            <p className="text-gray-500 text-xl">What we do & who we are</p>
+          </div>
+          <div className="md:w-1/2 text-lg text-gray-700 space-y-4">
+          <p className="text-4xl">
+              <b>Welcome to the Sustainable and Green Catalysis Lab!</b> 
+            </p>
+            <p>
+              Our group focuses on the development of novel ligands and base metal complexes, and
+              sustainable synthetic methods that enable the valorization of biomass. To date, most of the
+              valuable chemicals are produced from fossil fuels that result in adverse climate change. Hence,
+              our main motive is the synthesis of bio-based chemicals, pharmaceuticals, polymers, etc. from
+              abundant materials using inexpensive catalysts concerning sustainability, green chemistry, and
+              circular economy.
+            </p>
+            
+          </div>
+        </div>
       </div>
-    ))}
+
+      {/* News section */}
+      <div
+  className="bg-cover bg-center bg-no-repeat py-20 border-t border-gray-300"
+  style={{
+    backgroundImage:
+      "url('https://www.shutterstock.com/image-illustration/glowing-plexus-two-colors-abstract-600nw-2089760452.jpg')",
+  }}
+>
+  <div className="max-w-6xl mx-auto px-4 md:flex md:space-x-12 text-white">
+    {/* Left - Heading */}
+    <div className="md:w-1/2 mb-10 md:mb-0">
+      <h2 className="text-5xl font-semibold text-white mb-3">Latest News</h2>
+      <p className="text-xl text-gray-200">Updates from our lab</p>
+    </div>
+
+    {/* Right - News Items */}
+    <div className="md:w-1/2 space-y-6">
+      {newsItems.map((item, index) => (
+        <div
+          key={index}
+          className="py-2 pr-4 bg-black bg-opacity-40 rounded-lg shadow"
+        >
+          <h4 className="text-lg font-semibold mb-1">{item.date}</h4>
+          <p className="text-gray-300">{item.content}</p>
+        </div>
+      ))}
+    </div>
   </div>
 </div>
 
 
-        {/* Key Achievements */}
-        <div className="bg-black text-white p-6 rounded-lg shadow-lg mt-8 mb-8 max-w-4xl  items-start">
-          <h3 className="text-xl font-bold">Key Achievements</h3>
-          <ul className="text-start mt-4 space-y-3 text-lg ml-6">
-            <li className="flex items-center">
-              ✅ Published over 50 research papers in top-tier journals
-            </li>
-            <li className="flex items-center">
-              ✅ Supervised 25+ PhD students to successful completion
-            </li>
-            <li className="flex items-center">
-              ✅ Secured multiple research grants worth $2M+
-            </li>
-            <li className="flex items-center">
-              ✅ Multiple international research collaborations
-            </li>
-          </ul>
-        </div>
+      {researchSliderImages.length === 0 ? (
+  <div className="w-full h-[400px] flex justify-center items-center text-white text-xl">
+    Loading hero content...
+  </div>
+) : (
+  <div className="relative w-full h-[300px] md:h-[400px] overflow-hidden bg-black ">
+<img
+  src={researchSliderImages[researchIndex].src}
+  alt="research slider"
+  className="mx-auto mt-2 mb-2 object-cover h-[280px] md:h-[380px] w-[95%] rounded-lg shadow-md"
+/>
+
+    {/* <div className=" inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-start px-12 text-left">
+      <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        {researchSliderImages[researchIndex].heading}
+      </h2>
+      <p className="text-xl md:text-2xl mb-6">
+        {researchSliderImages[researchIndex].subheading}
+      </p>
+      <a
+        href={researchSliderImages[researchIndex].buttonLink}
+        className="inline-flex items-center bg-white text-black font-semibold px-6 py-3 rounded-lg hover:bg-gray-200"
+      >
+        <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.69 4.972L12 20l-6.85-4.45a12.083 12.083 0 01.69-4.972L12 14z" />
+        </svg>
+        {researchSliderImages[researchIndex].buttonText}
+      </a>
+    </div> */}
+    <button
+      onClick={prevResearchSlide}
+      className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 p-3 rounded-full hover:bg-opacity-80"
+    >
+      <ChevronLeft className="text-white" />
+    </button>
+    <button
+      onClick={nextResearchSlide}
+      className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 p-3 rounded-full hover:bg-opacity-80"
+    >
+      <ChevronRight className="text-white" />
+    </button>
+  </div>
+)}
+
+
     </section>
   );
 }
