@@ -71,7 +71,7 @@ export default function Home() {
         style={{ backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGUHgPpE8IVJytFxgCi8mXngZ3mxXfs81bw&s')" }}
       >
        <h1 className=" mx-1 md:ml-10 md:mr-8 text-2xl md:text-4xl font-bold mb-2">
-        The Organometallics and Sustainable Catalysis Lab
+        Organometallics and Sustainable Catalysis Lab
         </h1>
        <p className="mx-1 md:ml-10 md:mr-8 text-xl md:text-xl">
           We focus on the <em>development</em> of novel ligands and <strong className="text-lime-400">base metal complexes</strong>, and
@@ -137,7 +137,7 @@ export default function Home() {
           </div>
           <div className="md:w-1/2 text-lg text-gray-700 space-y-4">
           <p className="text-4xl">
-              <b>Welcome to the Sustainable and Green Catalysis Lab!</b> 
+              <b>Welcome to the Organometallics and Sustainable Catalysis Lab!</b> 
             </p>
             <p>
               Our group focuses on the development of novel ligands and base metal complexes, and
