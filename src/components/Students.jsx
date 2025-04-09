@@ -48,10 +48,10 @@ export default function Students() {
               <h2 className="text-2xl font-semibold">Dr. SaravanaKumar Elangovan</h2>
               <p className="text-lg mb-1">Assistant Professor, Department of Chemistry</p>
               <p>IIT (BHU) Varanasi</p>
-              <p className="font-semibold mb-1">Postdoctoral Researcher:</p>
+              {/* <p className="font-semibold mb-1">Postdoctoral Researcher:</p>
               <p>Technische Universität Berlin, University of Groningen</p>
               <p className="font-semibold mb-1">Research Associate:</p>
-              <p>Syngene International Limited</p>
+              <p>Syngene International Limited</p> */}
               <p className="font-semibold mb-1">Area of Interest:</p>
               <p>Organometallic Chemistry, Homogeneous Catalysis, Biomass Conversions, Green Chemistry</p>
               <p className="font-semibold mt-2 mb-1">Phone: +91-12345678</p>

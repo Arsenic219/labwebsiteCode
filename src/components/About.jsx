@@ -3,10 +3,6 @@ import React from "react";
 export default function About() {
   return (
 
-    
-
-
-
     <div className="bg-white text-black font-sans mx-auto p-6 space-y-6">
       <h1 className="text-4xl font-bold text-center border-b-2 pb-2 text-black">About Our Research Lab</h1>
        
@@ -161,14 +157,14 @@ export default function About() {
       <span><strong>Postdoctoral Research</strong>, University of Warwick</span>
       <span>2012 – 2015</span>
     </li>
-    <li className="flex justify-between">
+    {/* <li className="flex justify-between">
       <span><strong>Research Associate</strong>, Syngene International Ltd, Bangalore</span>
       <span>Feb 2010 – Aug 2012</span>
     </li>
     <li className="flex justify-between">
       <span><strong>Research Associate</strong>, XYZ Institute</span>
       <span>2009 – 2012</span>
-    </li>
+    </li> */}
     <li className="flex justify-between">
       <span><strong>Chemist</strong>, Advinus Therapeutics Private Ltd, Bangalore, India</span>
       <span>June 2009 – Dec 2010</span>
