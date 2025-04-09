@@ -50,41 +50,41 @@ export default function About() {
 
       <div className="mx-12">
          {/* Research Lab Overview */}
-      <section>
+      {/* <section>
         <h2 className="text-2xl font-semibold">Research Lab</h2>
         <p>
           Our lab focuses on groundbreaking research in chemistry and biotechnology, aiming to develop
           sustainable solutions for industrial and academic advancements.
         </p>
-      </section>
+      </section> */}
 
       {/* Mission Statement */}
-      <section>
+      {/* <section>
         <h2 className="text-2xl font-semibold">Mission</h2>
         <p>
           To push the boundaries of scientific innovation while fostering a collaborative and inclusive research
           environment.
         </p>
-      </section>
+      </section> */}
 
       {/* Vision Statement */}
-      <section>
+      {/* <section>
         <h2 className="text-2xl font-semibold">Vision</h2>
         <p>
         Our group focuses on the development of novel ligands, base metal complexes, and sustainable synthetic methods that enable the valorization of biomass. To date, most of the valuable chemicals are produced from fossil fuels that result in adverse 
         climate change. Hence, our main motive is the synthesis of bio-based chemicals, pharmaceuticals, polymers, etc. using inexpensive ligands and metals as catalysts concerning sustainability, green chemistry, and circular economy. 
         </p>
-      </section>
+      </section> */}
 
       {/* Team Section */}
-      <section>
+      {/* <section>
   <h2 className="text-2xl font-semibold">Our Team</h2>
   <p>
     Our team consists of dedicated researchers, PhD scholars, and visiting faculty from renowned 
     institutions worldwide.
   </p>
 
-  {/* Research Scholars */}
+ 
   <h3 className="text-xl font-semibold mt-4">Research Scholars</h3>
   <ul className="list-disc pl-6">
     <li><strong>Mohd Farhan Ansari</strong> (<a href="mailto:mohdfarhanansari.rs.chy22@itbhu.ac.in" className="text-blue-500">mohdfarhanansari.rs.chy22@itbhu.ac.in</a>)</li>
@@ -93,14 +93,14 @@ export default function About() {
     <li><strong>Ratnakar Singh</strong> (<a href="mailto:ratnakarsingh.rs.chy24@itbhu.ac.in" className="text-blue-500">ratnakarsingh.rs.chy24@itbhu.ac.in</a>)</li>
   </ul>
 
-  {/* Master Students */}
+  
   <h3 className="text-xl font-semibold mt-4">Master Students</h3>
   <ul className="list-disc pl-6">
     <li><strong>Mansi Yadav</strong></li>
     <li><strong>Alka Yadav</strong></li>
   </ul>
 
-  {/* IDD Students */}
+  
   <h3 className="text-xl font-semibold mt-4">IDD Students</h3>
   <ul className="list-disc pl-6">
     <li><strong>Akash Kumar</strong></li>
@@ -108,28 +108,28 @@ export default function About() {
     <li><strong>Ankita Patra</strong></li>
   </ul>
 
-  {/* Alumni */}
+  
   <h3 className="text-xl font-semibold mt-4">Alumni</h3>
   <ul className="list-disc pl-6">
     <li><strong>Anshika</strong> (M.Sc. 2023; Current position: Ph.D. student, Michigan State University, USA)</li>
     <li><strong>Abhishek Kumar</strong> (M.Sc. 2024)</li>
     <li><strong>Nitin Acchelal Yadav</strong> (M.Sc. 2024)</li>
   </ul>
-</section>
+</section> */}
 
 
       {/* Join Us Section */}
-      <section>
+      {/* <section>
         <h2 className="text-2xl font-semibold">Join Us</h2>
         <p>
           We welcome highly motivated scholars to join our research team. Reach out to us for more details
           on opportunities available in our lab.
         </p>
-      </section>
+      </section> */}
 
       {/* Personal Experience */}
       <section>
-  <h2 className="text-2xl font-semibold">Personal Experience</h2>
+  <h2 className="text-2xl font-semibold">Professional Experience</h2>
   <ul className="list-disc pl-6">
     <li className="flex justify-between">
       <span><strong>Assistant Professor</strong>, Indian Institute of Technology (BHU), Varanasi</span>

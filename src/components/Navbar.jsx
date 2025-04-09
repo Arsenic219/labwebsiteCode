@@ -59,7 +59,7 @@ export default function Navbar() {
       >
         {[
           { name: "Home", path: "/" },
-          { name: "About", path: "/about" },
+          { name: "About PI", path: "/about" },
           { name: "Research", path: "/research" },
           { name: "Publications", path: "/publications" },
           

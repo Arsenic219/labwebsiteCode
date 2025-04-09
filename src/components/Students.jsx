@@ -36,7 +36,7 @@ export default function Students() {
 
       {/* Proff */}
 
-      <h2 className="font-mono text-4xl md:text-6xl text-start md:ml-24 ">Professor</h2>
+      <h2 className="font-mono text-4xl md:text-6xl text-start md:ml-24 ">Principal Investigator</h2>
 
       <div className="max-w-7xl mx-auto py-12 text-white">
         <div className="grid md:grid-cols-2 gap-8 items-center">
