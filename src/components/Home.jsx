@@ -70,10 +70,10 @@ export default function Home() {
         className="w-full text-start py-8 px-2 md:px-14 bg-cover bg-center relative z-10"
         style={{ backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzGUHgPpE8IVJytFxgCi8mXngZ3mxXfs81bw&s')" }}
       >
-       <h1 className=" mx-1 md:ml-10 md:mr-8 text-2xl md:text-3xl font-bold mb-2">
+       <h1 className=" mx-1 md:ml-10 md:mr-8 text-2xl md:text-4xl font-bold mb-2">
         The Organometallics and Sustainable Catalysis Lab
         </h1>
-       <p className="mx-1 md:ml-10 md:mr-8 text-xl md:text-1xl">
+       <p className="mx-1 md:ml-10 md:mr-8 text-xl md:text-xl">
           We focus on the <em>development</em> of novel ligands and <strong className="text-lime-400">base metal complexes</strong>, and
            sustainable synthetic methods that enable the valorization of biomass.
         </p>
@@ -129,7 +129,7 @@ export default function Home() {
 
 
              {/* Research and Values Section */}
-      <div className="bg-white py-20 border-t border-gray-300 text-black">
+      <div className="bg-slate-100 py-20 border-t border-gray-300 text-black">
         <div className="max-w-6xl mx-auto px-4 md:flex md:space-x-12">
           <div className="md:w-1/2 mb-10 md:mb-0">
             <h2 className="text-5xl font-semibold text-gray-900 mb-3">Research and values</h2>
