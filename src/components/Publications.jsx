@@ -8,10 +8,10 @@ export default function Publications() {
     const fetchPublications = async () => {
       try {
         const teachingRes = await fetch(
-          "https://raw.githubusercontent.com/akashkumar62/labwebsite/main/publications/publications1.json"
+          "https://raw.githubusercontent.com/Arsenic219/labwebsite/main/publications/publications1.json"
         );
         const otherRes = await fetch(
-          "https://raw.githubusercontent.com/akashkumar62/labwebsite/main/publications/publications.json"
+          "https://raw.githubusercontent.com/Arsenic219/labwebsite/main/publications/publications.json"
         );
 
         const teachingData = await teachingRes.json();
@@ -33,11 +33,9 @@ export default function Publications() {
         key={idx}
         className="p-4 border rounded-lg bg-gray-50 text-left shadow-sm"
       >
-        <div className="text-gray-800 mb-1">
+        <div className="text-gray-800 mb-1 text-md">
           {idx + 1}.{" "}
-          <span
-            dangerouslySetInnerHTML={{ __html: pub.description }}
-          />
+          <span dangerouslySetInnerHTML={{ __html: pub.description }} />
         </div>
 
         {pub.link && (
@@ -49,6 +47,14 @@ export default function Publications() {
           >
             Read More
           </a>
+        )}
+
+        {pub.image && (
+          <img
+            src={pub.image}
+            alt={`publication-${idx}`}
+            className="mt-4 w-full max-w-md rounded shadow-md"
+          />
         )}
       </div>
     ));

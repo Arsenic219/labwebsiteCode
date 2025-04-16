@@ -9,10 +9,10 @@ export default function Research() {
     const fetchResearchData = async () => {
       try {
         const projectsRes = await fetch(
-          "https://raw.githubusercontent.com/akashkumar62/labwebsite/main/research.json"
+          "https://raw.githubusercontent.com/Arsenic219/labwebsite/main/research.json"
         );
         const highlightsRes = await fetch(
-          "https://raw.githubusercontent.com/akashkumar62/labwebsite/main/researchHighlights.json"
+          "https://raw.githubusercontent.com/Arsenic219/labwebsite/main/researchHighlights.json"
         );
 
         const projectData = await projectsRes.json();
@@ -58,7 +58,7 @@ export default function Research() {
                       key={idx}
                       src={img}
                       alt={`research-${idx}`}
-                      className="w-full h-56 object-cover rounded-xl shadow hover:scale-105 transition-transform"
+                      className="w-full  object-cover shadow hover:scale-105 transition-transform"
                     />
                   ))}
                 </div>
