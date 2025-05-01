@@ -192,7 +192,7 @@ export default function Home() {
 <img
   src={researchSliderImages[researchIndex].src}
   alt="research slider"
-  className="mx-auto mt-2 mb-2 object-cover h-[280px] md:h-[380px] w-[95%] rounded-lg shadow-md"
+  className="mx-auto mt-2 mb-2 object-cover h-[280px] md:h-[380px] w-[90%] rounded-lg shadow-md "
 />
 
     {/* <div className=" inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-start px-12 text-left">

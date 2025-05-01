@@ -122,11 +122,11 @@ export default function Students() {
           </div>
           <div className="mt-0">
             <img
-              className="w-full md:w-3/4 shadow-lg"
+              className="w-full h-auto shadow-lg object-contain"
               src="https://raw.githubusercontent.com/Arsenic219/labwebsite/main/gallery/WhatsApp Image 2025-05-01 at 2.56.31 PM.jpeg"
               alt="Professor"
               style={{
-                maxHeight: "70vh",
+                maxHeight: "60vh",
                 minHeight: "200px"
               }}
             />
