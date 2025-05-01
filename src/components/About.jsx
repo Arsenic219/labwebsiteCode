@@ -25,26 +25,32 @@ export default function About() {
               <p className="font-semibold">Area of Interest:</p>
               <p>Organometallic Chemistry, Homogeneous Catalysis, Biomass Conversions, Green Chemistry</p>
               <p className="font-semibold mt-2">Phone: +91-12345678</p>
-              <p className="font-semibold">Email: <a href="mailto:abcd.chy@iitbhu.ac.in" className="text-blue-600 underline">abcd.chy@iitbhu.ac.in</a></p>
-              <a
+              <p className="font-semibold">Email: <a href="mailto:saravana.chy@iitbhu.ac.in" className="text-blue-600 underline">saravana.chy@iitbhu.ac.in</a></p>
+              {/* <a
                 href="/about"
                 className="mt-4 inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
               >
                 Learn More
-              </a>
+              </a> */}
             </div>
           </div>
-          <div>
-            <img
-              className="w-full rounded-lg shadow-lg"
-              src="https://m.economictimes.com/thumb/msid-108212368,width-1200,height-900,resizemode-4,imgsize-69468/ms-dhoni.jpg"
-              alt="Professor"
-            />
-          </div>
+          <div className="flex justify-center">
+  <div className="w-full max-w-1xl px-1">
+    <img
+      className="w-full h-auto shadow-lg object-contain"
+      src="https://raw.githubusercontent.com/Arsenic219/labwebsite/main/gallery/WhatsApp Image 2025-05-01 at 2.56.31 PM.jpeg"
+      alt="Professor"
+      style={{
+        maxHeight: "50vh",
+        minHeight: "200px"
+      }}
+    />
+  </div>
+</div>
         </div>
       </div>
 
-      <div className="mx-12">
+      <div className="mx-1 md:mx-12">
          {/* Research Lab Overview */}
       {/* <section>
         <h2 className="text-2xl font-semibold">Research Lab</h2>

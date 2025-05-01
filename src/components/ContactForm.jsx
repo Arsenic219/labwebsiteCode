@@ -150,7 +150,7 @@ export default function ContactInfo() {
           </p>
           <p className="mt-4 text-gray-400">
             <span className="block font-bold text-white">Email</span>
-            abc.chy@iitbhu.ac.in
+            saravana.chy@iitbhu.ac.in
           </p>
           <p className="mt-4 text-gray-400">
             <span className="block font-bold text-white">Phone</span>

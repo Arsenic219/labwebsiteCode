@@ -55,7 +55,7 @@ export default function Students() {
               <p className="font-semibold mb-1">Area of Interest:</p>
               <p>Organometallic Chemistry, Homogeneous Catalysis, Biomass Conversions, Green Chemistry</p>
               <p className="font-semibold mt-2 mb-1">Phone: +91-12345678</p>
-              <p className="font-semibold">Email: <a href="mailto:abcd.chy@iitbhu.ac.in" className="text-blue-600 underline">abcd.chy@iitbhu.ac.in</a></p>
+              <p className="font-semibold">Email: <a href="mailto:saravana.chy@iitbhu.ac.in" className="text-blue-600 underline">saravana.chy@iitbhu.ac.in</a></p>
 
 
 
@@ -78,7 +78,7 @@ export default function Students() {
                 <FontAwesomeIcon icon={faGoogleScholar} />
               </a>
               <a
-                href="https://orcid.org/"
+                href="http://orcid.org/0000-0003-2694-9989"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-lime-600"
@@ -94,7 +94,7 @@ export default function Students() {
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
               <a
-                href="https://twitter.com/"
+                href="https://x.com/Saravana1707"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-sky-400"
@@ -103,7 +103,7 @@ export default function Students() {
               </a>
 
               <a
-                href="https://twitter.com/"
+                href="hhttps://www.linkedin.com/in/saravanakumar-elangovan-9408a271/?originalSubdomain=in"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-sky-400"
@@ -123,8 +123,12 @@ export default function Students() {
           <div className="mt-0">
             <img
               className="w-full md:w-3/4 shadow-lg"
-              src="https://m.economictimes.com/thumb/msid-108212368,width-1200,height-900,resizemode-4,imgsize-69468/ms-dhoni.jpg"
+              src="https://raw.githubusercontent.com/Arsenic219/labwebsite/main/gallery/WhatsApp Image 2025-05-01 at 2.56.31 PM.jpeg"
               alt="Professor"
+              style={{
+                maxHeight: "70vh",
+                minHeight: "200px"
+              }}
             />
           </div>
         </div>
