@@ -68,7 +68,7 @@ export default function Research() {
         </div>
 
         {/* Projects Grid */}
-        <div className="mt-20">
+        {/* <div className="mt-20">
           <h3 className="text-3xl font-bold mb-6 text-center">Featured Research Areas</h3>
           {loading ? (
             <p className="text-center text-gray-500">Loading research projects...</p>
@@ -98,7 +98,7 @@ export default function Research() {
               ))}
             </div>
           )}
-        </div>
+        </div> */}
       </div>
     </section>
   );

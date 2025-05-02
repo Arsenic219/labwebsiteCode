@@ -10,7 +10,7 @@ export default function Home() {
   const [researchIndex, setResearchIndex] = useState(0);
 
   useEffect(() => {
-    fetch("https://raw.githubusercontent.com/akashkumar62/labwebsite/main/heroSlider.json")
+    fetch("https://raw.githubusercontent.com/Arsenic219/labwebsite/main/heroSlider.json")
       .then((res) => res.json())
       .then((data) => setHeroSliderImages(data))
       .catch((err) => console.error("Error fetching hero slider:", err));
@@ -20,7 +20,7 @@ export default function Home() {
       .then((data) => setResearchSliderImages(data))
       .catch((err) => console.error("Error fetching research slider:", err));
   
-    fetch("https://raw.githubusercontent.com/akashkumar62/labwebsite/main/news.json")
+    fetch("https://raw.githubusercontent.com/Arsenic219/labwebsite/main/news.json")
       .then((res) => res.json())
       .then((data) => setNewsItems(data))
       .catch((err) => console.error("Error fetching news:", err));

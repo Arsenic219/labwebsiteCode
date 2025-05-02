@@ -54,7 +54,6 @@ export default function Footer() {
               className="text-blue-400 hover:underline text-md">📧 saravana.chy@iitbhu.ac.in</a>
           </p>
          
-          <p className="text-sm">📞 +91 234566655</p>
         </div>
 
         {/* Social Media Links */}

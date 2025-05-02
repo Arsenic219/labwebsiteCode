@@ -15,16 +15,16 @@ export default function About() {
               Highly motivated scholars can join our group for Ph.D for Advancing Inorganic Chemistry for a Sustainable and Greener Future.
             </h1> */}
             <div className="text-start">
-              <h2 className="text-2xl font-semibold">Dr. SaravanaKumar Elangovan</h2>
+              <h2 className="text-2xl font-semibold">Dr. Saravanakumar Elangovan</h2>
               <p className="text-lg">Assistant Professor, Department of Chemistry</p>
-              <p>IIT (BHU) Varanasi</p>
-              <p className="font-semibold">Postdoctoral Researcher:</p>
+              <p>IIT (BHU) Varanasi , UP (221005)</p>
+              {/* <p className="font-semibold">Postdoctoral Researcher:</p>
               <p>Technische Universität Berlin, University of Groningen</p>
               <p className="font-semibold">Research Associate:</p>
-              <p>Syngene International Limited</p>
+              <p>Syngene International Limited</p> */}
               <p className="font-semibold">Area of Interest:</p>
               <p>Organometallic Chemistry, Homogeneous Catalysis, Biomass Conversions, Green Chemistry</p>
-              <p className="font-semibold mt-2">Phone: +91-12345678</p>
+              {/* <p className="font-semibold mt-2">Phone: +91-12345678</p> */}
               <p className="font-semibold">Email: <a href="mailto:saravana.chy@iitbhu.ac.in" className="text-blue-600 underline">saravana.chy@iitbhu.ac.in</a></p>
               {/* <a
                 href="/about"
@@ -155,10 +155,10 @@ export default function About() {
     <li className="flex justify-between">
       <span>Advisor: Prof. Dr. Katalin Barta</span>
     </li>
-    <li className="flex justify-between">
+    {/* <li className="flex justify-between">
       <span><strong>Professor</strong>, Indian Institute of Technology (BHU)</span>
       <span>2015 – Present</span>
-    </li>
+    </li> */}
     <li className="flex justify-between">
       <span><strong>Postdoctoral Research</strong>, University of Warwick</span>
       <span>2012 – 2015</span>
@@ -183,17 +183,17 @@ export default function About() {
       <section>
   <h2 className="text-2xl font-semibold">Awards & Recognitions</h2>
   <ul className="list-disc pl-6 mb-9">
-    <li><strong>Beijing Youth Talent Funding Program</strong> – Visiting program for young foreign scholars</li>
+    <li><strong>Beijing Youth Talent Funding Program</strong> – Visiting program for young foreign scholars <span className="float-right">2024</span></li>
     <li><strong>Ramanujan Fellowship</strong> <span className="float-right">2021</span></li>
-    <li><strong>Alexander Von Humboldt Fellowship</strong> <span className="float-right">Aug 2019 – July 2021</span></li>
+    <li><strong>Alexander Von Humboldt Fellowship</strong> <span className="float-right">Aug 2019 – Feb 2022</span></li>
     <li><strong>Selected for 70th Lindau Nobel Laureate Meeting</strong> <span className="float-right">2020</span></li>
     <li><strong>Ph.D. Fellowship</strong>, Leibniz-Institut für Katalyse, Rostock, Germany <span className="float-right">Feb 2015 – July 2016</span></li>
     <li><strong>Ph.D. Fellowship (ARED)</strong>, Conseil Régional de Bretagne, Rennes, France <span className="float-right">Oct 2013 – Jan 2015</span></li>
     <li><strong>Charpak Scholarship of Excellence</strong> for International Master Program, University of Rennes1, France <span className="float-right">Sep 2012 – June 2013</span></li>
     <li><strong>The Tamilnadu Educational Trust</strong> – Fresh Scholarship for Master Studies <span className="float-right">2007 – 2008</span></li>
-    <li><strong>Best Researcher Award</strong>, XYZ Organization <span className="float-right">2021</span></li>
+    {/* <li><strong>Best Researcher Award</strong>, XYZ Organization <span className="float-right">2021</span></li>
     <li><strong>National Science Fellowship</strong> <span className="float-right">2018</span></li>
-    <li><strong>Innovative Chemist Award</strong> <span className="float-right">2015</span></li>
+    <li><strong>Innovative Chemist Award</strong> <span className="float-right">2015</span></li> */}
   </ul>
 </section>
 

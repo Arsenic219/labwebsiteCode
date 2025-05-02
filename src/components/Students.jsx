@@ -17,7 +17,7 @@ export default function Students() {
   const [filter, setFilter] = useState("All");
 
   useEffect(() => {
-    fetch("https://raw.githubusercontent.com/akashkumar62/labwebsite/main/students.json")
+    fetch("https://raw.githubusercontent.com/Arsenic219/labwebsite/main/students.json")
       .then((response) => response.json())
       .then((data) => setStudents(data))
       .catch((error) => console.error("Error fetching student data:", error));
@@ -45,7 +45,7 @@ export default function Students() {
               Highly motivated scholars can join our group for Ph.D for Advancing Inorganic Chemistry for a Sustainable and Greener Future.
             </h1> */}
             <div className="text-start text-white mb-1">
-              <h2 className="text-2xl font-semibold">Dr. SaravanaKumar Elangovan</h2>
+              <h2 className="text-2xl font-semibold">Dr. Saravanakumar Elangovan</h2>
               <p className="text-lg mb-1">Assistant Professor, Department of Chemistry</p>
               <p>IIT (BHU) Varanasi</p>
               {/* <p className="font-semibold mb-1">Postdoctoral Researcher:</p>
