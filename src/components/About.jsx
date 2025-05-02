@@ -38,7 +38,7 @@ export default function About() {
   <div className="w-full max-w-1xl px-1">
     <img
       className="w-full h-auto shadow-lg object-contain"
-      src="https://raw.githubusercontent.com/Arsenic219/labwebsite/main/gallery/WhatsApp Image 2025-05-01 at 2.56.31 PM.jpeg"
+      src="https://raw.githubusercontent.com/Arsenic219/labwebsite/main/gallery/sir.jpeg"
       alt="Professor"
       style={{
         maxHeight: "50vh",

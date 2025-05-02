@@ -64,7 +64,7 @@ export default function Navbar() {
           { name: "Publications", path: "/publications" },
           
           
-          { name: "Teams", path: "/students" },
+          { name: "Team", path: "/students" },
           { name: "Gallery", path: "/gallery" },
           { name: "Laboratory", path: "/laboratory" },
           { name: "Contact", path: "/contact" },
