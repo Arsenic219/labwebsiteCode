@@ -42,9 +42,9 @@ export default function Research() {
           {highlightSections.map((section, index) => (
             <div
               key={index}
-              className="rounded-3xl bg-gradient-to-br from-gray-100 to-white shadow-md p-8"
+              className="rounded-sm bg-gradient-to-br from-gray-100 to-white shadow-md p-6 "
             >
-              <div className="md:flex md:items-start md:space-x-8">
+              <div className="md:flex md:items-start md:space-x-20">
                 <div className="md:w-1/2 mb-6 md:mb-0">
                   <h3 className="text-3xl font-semibold mb-4">{section.title}</h3>
                   <p className="text-gray-700 text-lg leading-relaxed">
@@ -52,7 +52,7 @@ export default function Research() {
                   </p>
                 </div>
 
-                <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="md:w-3/4 grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {section.images.map((img, idx) => (
                     <img
                       key={idx}
